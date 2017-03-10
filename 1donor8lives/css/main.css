@@ -1,0 +1,201 @@
+@charset "UTF-8";
+.hide{
+	display: none;
+}
+
+body{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+50,ffffff+100 */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left,  #ffffff 0%, #f2f2f2 50%, #ffffff 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #ffffff 0%,#f2f2f2 50%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #ffffff 0%,#f2f2f2 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+
+}
+
+#burger{
+	height: 50px;
+	background-color: #f2f2f2;
+	padding: 10px 0px 10px 30px;
+	width: 100%;
+	position: fixed;
+	display: inline;
+}
+
+#topNav{
+	font-family: sans-serif;
+	background-color: #f2f2f2;
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	display: none;
+	position: fixed;
+}
+
+nav ul {
+	margin-top: .5em;
+	margin: 0 auto;
+	text-align: center;
+}
+
+nav ul li{
+	display: block;
+}
+
+nav ul li a{
+	color: #666;
+	padding: 5px;
+	margin:15px 10px 0px 15px;
+	transition:all 0.5s;
+
+}
+nav ul li a:hover{
+	color: red;
+}
+nav ul li a:active{
+	color: red;
+}
+/* -------------------------------------- main nav end / splash start ----------------------------------------  */
+#splash{
+	padding-top: 200px;
+	text-align: center;
+	min-height: 500px;
+
+}
+h1{
+	font-size: 5em;
+}
+h2{
+	font-size: 1.3em;
+}
+hr{
+	border-color: red;
+}
+#splash a{
+	color: #000;
+}
+.hashred{
+	color: red;
+}
+/* -------------------------------------- splash end / gallery start ----------------------------------------  */
+#gallery{
+	width: 100%;
+}
+#gallery img{
+	display: block;
+	float: left;
+	width: 10%;
+	margin: 0;
+	padding: 0;
+}
+
+#uploader{
+	margin: 0 auto;
+	margin-top: 30px;
+	display: block;
+	padding: 8px;
+	background-color: #dbdbdb;
+	color: #000;
+	border-radius: 5px;
+	transition:all 0.3s;
+}
+#uploader:hover{
+	background-color: #999;
+}
+
+
+/* -------------------------------------- Gallery end / video start ----------------------------------------  */
+
+#videozone{
+	margin-top: 45px;
+}
+
+
+/* -------------------------------------- video end / game start ----------------------------------------  */
+
+.gameControls{
+	position: relative;
+	height: 180px;
+	margin-top: 250px;
+}
+.dpad{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+#a_up{
+	left: 60px;
+}
+#a_left{
+	left: 0px;
+	top: 60px;
+}
+#a_center{
+	position: absolute;
+	left: 60px;
+	top:60px;
+	width: 60px;
+	height: 60px;
+	background-color: red;
+}
+#a_right{
+	left: 120px;
+	top: 60px;
+}
+#a_down{
+	left: 60px;
+	top: 120px;
+}
+
+/* -------------------------------------- Game end / fact start ----------------------------------------  */
+
+.factNav:hover{
+	cursor: pointer;
+}
+/* -------------------------------------- fact end ----------------------------------------  */
+
+footer{
+	background-color: #000;
+	color: #666;
+	text-align: center;
+	padding: 30px;
+}
+
+footer a{
+	color: #666;
+}
+
+footer a:hover{
+	color: #999;
+}
+/* -------------------------------------- Media query ----------------------------------------  */
+
+@media screen and (min-width: 41em) {
+
+#burger{
+	display: none;
+}
+#topNav{
+	font-family: sans-serif;
+	font-size: 0.8em;
+	width: 100%;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 12px;
+	padding-bottom: 10px;
+	display: block;
+}
+nav ul li{
+	text-decoration: none;
+	list-style-type:none;
+	display: inline;
+}
+#videozone{
+	margin: 0 auto;
+	margin-top: 45px;
+	width: 1280px;
+	height: 720px;
+}
+
+}
