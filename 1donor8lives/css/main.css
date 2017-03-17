@@ -81,12 +81,19 @@ hr{
 #gallery{
 	width: 100%;
 }
-#gallery img{
+#btnholder{
+	display: block;
+	clear: both;
+	padding-top: 30px;
+}
+.imgholder{
 	display: block;
 	float: left;
 	width: 10%;
+	opacity: 0;
 	margin: 0;
 	padding: 0;
+	transition:all 0.8s;
 }
 
 #uploader{
@@ -152,6 +159,10 @@ hr{
 
 .factNav:hover{
 	cursor: pointer;
+}
+#fact{
+	opacity: 1;
+	transition:all 1s; 
 }
 /* -------------------------------------- fact end ----------------------------------------  */
 
