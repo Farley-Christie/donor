@@ -5,35 +5,43 @@
 
 body{
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+50,ffffff+100 */
-background: #ffffff; /* Old browsers */
+background: #ffffff; /* Old browsers 
 background: -moz-linear-gradient(left,  #ffffff 0%, #f2f2f2 50%, #ffffff 100%); /* FF3.6-15 */
 background: -webkit-linear-gradient(left,  #ffffff 0%,#f2f2f2 50%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to right,  #ffffff 0%,#f2f2f2 50%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 */
+}
 
+section{
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 #burger{
-	height: 50px;
+	height: 100px;
 	background-color: #f2f2f2;
 	padding: 10px 0px 10px 30px;
 	width: 100%;
 	position: fixed;
 	display: inline;
 }
-
+#burger img{
+	float: right;
+	padding-right: 40px;
+}
 #topNav{
 	font-family: sans-serif;
 	background-color: #f2f2f2;
 	width: 100%;
+	height: 20em;
 	text-align: center;
-	margin-top: 50px;
+	margin-top: 70px;
 	display: none;
 	position: fixed;
 }
 
 nav ul {
-	margin-top: .5em;
+	margin-top: 1.4em;
 	margin: 0 auto;
 	text-align: center;
 }
@@ -43,11 +51,11 @@ nav ul li{
 }
 
 nav ul li a{
+	font-size: 2em;
 	color: #666;
 	padding: 5px;
 	margin:15px 10px 0px 15px;
 	transition:all 0.5s;
-
 }
 nav ul li a:hover{
 	color: red;
@@ -55,18 +63,28 @@ nav ul li a:hover{
 nav ul li a:active{
 	color: red;
 }
+#menulink{
+	background-color: red;
+	color: #000;
+	text-align: center;
+	width: 100%;
+	top:4.5em;
+	padding: 5px;
+	position: fixed;
+	display: inline;
+	transition:all 0.3s;
+}
 /* -------------------------------------- main nav end / splash start ----------------------------------------  */
 #splash{
-	padding-top: 200px;
+	padding-top: 300px;
 	text-align: center;
 	min-height: 500px;
-
 }
 h1{
-	font-size: 5em;
+	font-size: 8em;
 }
 h2{
-	font-size: 1.3em;
+	font-size: 2.5em;
 }
 hr{
 	border-color: red;
@@ -77,19 +95,35 @@ hr{
 .hashred{
 	color: red;
 }
+.smaller{
+	font-size: 0.8em;
+}
+.downChev{
+	display: block;
+	padding-top: 40%;
+	margin: 0 auto;
+}
 /* -------------------------------------- splash end / gallery start ----------------------------------------  */
 #gallery{
 	width: 100%;
 }
-#gallery img{
+#btnholder{
 	display: block;
+	clear: both;
+	padding-top: 30px;
+}
+.imgholder{
+	display: none;
 	float: left;
-	width: 10%;
+	width: 33.3%;
+	opacity: 0;
 	margin: 0;
 	padding: 0;
+	transition:all 0.5s;
 }
 
 #uploader{
+	font-size: 2.4em;
 	margin: 0 auto;
 	margin-top: 30px;
 	display: block;
@@ -105,18 +139,238 @@ hr{
 
 
 /* -------------------------------------- Gallery end / video start ----------------------------------------  */
-
+#vidStarter{
+	background-color: #f2f2f2;
+	width: 100%;
+	height: 500px;
+}
+#vidStarter img{
+	margin: 15% 30%;
+}
 #videozone{
 	margin-top: 45px;
+	width: 100%;
+}
+video{
+	width: 100%;
 }
 
-
 /* -------------------------------------- video end / game start ----------------------------------------  */
+#gameStart{
+	width: 100%;
+	margin: 0 auto;
+}
+#gameEnd{
+	width: 100%;
+	margin: 0 auto;
+}
 
+#wasd{
+	display: none;
+}
+
+#gamecon h3{
+	font-size: 1.8em;
+	text-align: center;
+}
+
+#gamecon p{
+	font-size: 1.6em;
+	text-align: center;
+}
+
+#startBtn{
+	font-size: 1.8em;
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	background-color: red;
+	padding: 20px;
+	border-radius: 3px;
+}
+.gameBtn{
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	background-color: red;
+	color: #000;
+	padding: 8px;
+	border-radius: 3px;
+}
+.gameText{ 
+	text-align: center;
+	margin: 0 auto;
+}
+#game{
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#mazeCanvas{
+	float: left;
+}
+#gameBord{
+	float: right;
+}
+.gameControls{
+	position: relative;
+	height: 360px;
+	top: 140px; 
+	left: 60%;
+}
+.dpad{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+#a_up{
+	left: 120px;
+}
+#a_left{
+	left: 0px;
+	top: 120px;
+}
+#a_center{
+	position: absolute;
+	left: 120px;
+	top: 120px;
+	width: 120px;
+	height: 120px;
+	background-color: red;
+}
+#a_right{
+	left: 240px;
+	top: 120px;
+}
+#a_down{
+	left: 120px;
+	top: 240px;
+}
+
+/* -------------------------------------- Game end / fact start ----------------------------------------  */
+
+.factNav:hover{
+	cursor: pointer;
+}
+.fact{
+	opacity: 1;
+	font-size: 1.6em;
+	transition:all 1s; 
+}
+/* -------------------------------------- fact end ----------------------------------------  */
+
+footer{
+	background-color: #000;
+	color: #666;
+	text-align: center;
+	padding: 30px;
+}
+
+footer a{
+	opacity: 0.7;
+	color: #999;
+}
+
+footer a:hover{
+	opacity: 1;
+	color: #999;
+}
+
+.socialmedia{
+	text-align: center;
+	margin-top:25px;
+}
+/* -------------------------------------- Media querys ----------------------------------------  */
+
+@media screen and (min-width: 80em) {
+
+#burger{
+	display: none;
+}
+#menulink{
+	background-color: red;
+	color: #000;
+	text-align: center;
+	width: 100%;
+	top:2.6em;
+	padding: 5px;
+	position: fixed;
+	display: inline;
+}
+h1{
+	font-size: 5em;
+}
+h2{
+	font-size: 1.5em;
+}
+#topNav{
+	font-family: sans-serif;
+	font-size: 0.8em;
+	width: 100%;
+	height: 4em;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 1em;
+	padding-bottom: 0.8em;
+	display: block;
+}
+nav ul li{
+	text-decoration: none;
+	list-style-type:none;
+	display: inline;
+}
+nav ul li a{
+	font-size: 0.9em;
+}
+.downChev{
+	display: none;
+}
+.imgholder{
+	width: 10%;
+}
+#uploader{
+	font-size: 1em;
+}
+#vidStarter img{
+	margin: 15% 33%;
+}
+#videozone{
+	margin: 0 auto;
+	margin-top: 45px;
+	width: 1280px;
+	height: 720px;
+}
+
+#gamecon{
+	display: block;
+}
+
+#wasd{
+	display: block;
+	margin: 0 auto;
+}
+.mazemen{
+	display: block;
+}
+#startBtn{
+	font-size: 1.3em;
+	padding: 8px;
+}
+#gamecon h3{
+	font-size: 1.8em;
+	text-align: center;
+}
+
+#gamecon p{
+	font-size: 1.3em;
+	text-align: center;
+}
 .gameControls{
 	position: relative;
 	height: 180px;
-	margin-top: 250px;
+	top: 300px; 
+	left: 80%;
 }
 .dpad{
 	position: absolute;
@@ -134,7 +388,7 @@ hr{
 #a_center{
 	position: absolute;
 	left: 60px;
-	top:60px;
+	top: 60px;
 	width: 60px;
 	height: 60px;
 	background-color: red;
@@ -147,55 +401,7 @@ hr{
 	left: 60px;
 	top: 120px;
 }
-
-/* -------------------------------------- Game end / fact start ----------------------------------------  */
-
-.factNav:hover{
-	cursor: pointer;
+.fact{
+	font-size: 1.2em;
 }
-/* -------------------------------------- fact end ----------------------------------------  */
-
-footer{
-	background-color: #000;
-	color: #666;
-	text-align: center;
-	padding: 30px;
-}
-
-footer a{
-	color: #666;
-}
-
-footer a:hover{
-	color: #999;
-}
-/* -------------------------------------- Media query ----------------------------------------  */
-
-@media screen and (min-width: 41em) {
-
-#burger{
-	display: none;
-}
-#topNav{
-	font-family: sans-serif;
-	font-size: 0.8em;
-	width: 100%;
-	text-align: center;
-	margin-top: 0px;
-	padding-top: 12px;
-	padding-bottom: 10px;
-	display: block;
-}
-nav ul li{
-	text-decoration: none;
-	list-style-type:none;
-	display: inline;
-}
-#videozone{
-	margin: 0 auto;
-	margin-top: 45px;
-	width: 1280px;
-	height: 720px;
-}
-
 }
